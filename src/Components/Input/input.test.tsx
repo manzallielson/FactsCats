@@ -1,11 +1,19 @@
-import { render, fireEvent } from "@testing-library/react";
-import InputComponent from "../../../../teste-t10/src/Components/Input/input";
+import "@testing-library/jest-dom";
+import { render, screen } from "@testing-library/react";
+import InputComponent from "./input";
 import "@testing-library/jest-dom";
 
 describe("Input component", () => {
+  const setup = () => {
+    const utils = render(<InputComponent placeholder="Search" />);
+    const input = screen.getByPlaceholderText("Search");
+    return {
+      input,
+      ...utils,
+    };
+  };
+
   it("Should display the component input", () => {
-    const { container } = render(<InputComponent className="chakra-input" />);
-    const inputTest = container.getByRole("input");
-    expect(inputTest).toHaveAttribute("class", "input");
+    expect(setup().input).toBeVisible();
   });
 });

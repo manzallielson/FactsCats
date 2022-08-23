@@ -86,7 +86,6 @@ export default function Main() {
     setIsSpinner(false);
   }
 
-  
   async function getFact() {
     setIsSpinner(true);
     let lista = [];
@@ -205,11 +204,7 @@ export default function Main() {
                   borderColor="black"
                   textAlign="center"
                   variant="flushed"
-                  onChange={(e) =>
-                    Number(e.target.value) < 100
-                      ? setValueFact(e.target.value)
-                      : setValueFact("100")
-                  }
+                  onChange={(e) => setValueFact(e.target.value)}
                 />
 
                 <Button
@@ -247,6 +242,8 @@ export default function Main() {
                         base: "green 1px 1px 1px, blue 3px 3px 3px, green 4px 4px 6px",
                         md: "none",
                       }}
+                      border={{ base: "1px solid black", md: "none" }}
+                      borderRadius={{ base: "6px", md: "none" }}
                       fontSize={{ base: "1rem", md: "1.5rem" }}
                       textAlign={{ base: "center", md: "start" }}
                       p={{ base: "20px 10px", md: "0" }}
@@ -351,10 +348,12 @@ export default function Main() {
                         base: "green 1px 1px 1px, blue 3px 3px 3px, green 4px 4px 6px",
                         md: "none",
                       }}
+                      border={{ base: "1px solid black", md: "none" }}
+                      borderRadius={{ base: "6px", md: "none" }}
                       fontSize={{ base: "1rem", md: "1.5rem" }}
                       textAlign={{ base: "center", md: "start" }}
-                      p={{ base: "20px 0", md: "0" }}
-                      m={{ base: "20px 20px 10px  0", md: "20px 10px" }}
+                      p={{ base: "20px 10px", md: "0" }}
+                      m={{ base: "20px 10px 10px 0", md: "20px 10px" }}
                       key={index}
                     >
                       <Flex
@@ -369,7 +368,6 @@ export default function Main() {
                         alignContent="center"
                         alignItems="center"
                         justifyContent="center"
-
                       >
                         {index + 1}
                       </Flex>
@@ -393,9 +391,29 @@ export default function Main() {
           Desenvolvido por Elson Manzalli
         </Text>
         <Flex alignContent="center" alignItems="center" gap="15px">
-          <Img onClick={()=>window.open("https://github.com/manzallielson","_blank")} w="40px" h="40px" src={GitHub} />
+          <Img
+            _hover={{ cursor: "pointer" }}
+            onClick={() =>
+              window.open("https://github.com/manzallielson", "_blank")
+            }
+            w="40px"
+            h="40px"
+            src={GitHub}
+          />
 
-          <Img onClick={()=>window.open("https://www.linkedin.com/in/elson-manzalli-6b44237a/","_blank")} w="100px" minW="100px" h="60px" src={LinkedIn} />
+          <Img
+            _hover={{ cursor: "pointer" }}
+            onClick={() =>
+              window.open(
+                "https://www.linkedin.com/in/elson-manzalli-6b44237a/",
+                "_blank"
+              )
+            }
+            w="100px"
+            minW="100px"
+            h="60px"
+            src={LinkedIn}
+          />
         </Flex>
       </Flex>
     </Flex>

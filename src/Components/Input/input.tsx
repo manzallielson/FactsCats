@@ -85,6 +85,12 @@ export default function InputComponent({
           textAlign="center"
           onChange={onChange}
           maxLength={maxLength}
+          onKeyPress={(event) => {
+            if (!/[0-9]/.test(event.key)) {
+              event.preventDefault();
+            }
+          }}
+          {...rest}
         />
       </Flex>
       {isError && <FormErrorMessage>{errorMessage}</FormErrorMessage>}
