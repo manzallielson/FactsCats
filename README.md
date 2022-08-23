@@ -77,20 +77,24 @@ Ao finalizar as requisições o botão de pesquisa ficara aptto novamente, e se 
 
 
 <p> Imagem 5 - lista 1 (Mobile)</p>
+
 ![image](https://user-images.githubusercontent.com/74797973/186064408-2ec363b3-913d-4c97-98e9-fc0805be0d8d.png)
 
 
 <p> Imagem 6 - lista 2 (Mobile)</p>
+
 ![image](https://user-images.githubusercontent.com/74797973/186064510-692d1313-17ba-4fa5-bbae-5b56c639db39.png)
 
 
 <p>imagem 7 - menu Toogle</p>
+
 ![image](https://user-images.githubusercontent.com/74797973/186067665-c8aeb290-0401-43fc-859f-f37062524ee4.png)
 
 
 <p>No canto superior esquerdo se localiza o logo T-10 - Imagem 8, através dele é possivel ser redirecionado para a pagina da T10.digital</p>
 
 <p>imagem 8 - Logo - T10</p>
+
 ![image](https://user-images.githubusercontent.com/74797973/186067712-59bb8b1c-9a76-4380-985e-94e220c0332f.png)
 
 
@@ -100,6 +104,7 @@ O icone GitHub possui um link com o GitHub, levando direto para o perfil do dese
 O icone LinkedIn possui um link com o LinkedIn, levando direto para o perfil do desenvolvedor. </p>
 
 <p>imagem 9 - Footer</p>
+
 ![image](https://user-images.githubusercontent.com/74797973/186067781-60c1a0a4-48fd-4fbd-8949-e02c414c2806.png)
 
 <h1>Detalhes Técnicos</h1>
